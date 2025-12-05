@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #qrBox {
+            margin-top: 20px;
+            color: aquamarine;
+        }
+
+        input {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #qrBox {
+            opacity: 0;
+            transition: opacity 0.6s ease;
+        }
+
+        #qrBox.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>QR Code Generator</h2>
+
+    <input type="text" id="qrInput" placeholder="Enter text or URL..." />
+    <button id="generateBtn">Generate</button>
+    <button id="downloadbtn">download</button>
+    <div id="qrBox"></div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+
+    <script src="qr.js"></script>
+</body>
+
+</html>
